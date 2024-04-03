@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drian.graphix</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@400;500&display=swap');
+  :root {
+        --nav-bg-color: #006666;
+        --secondary-color: #FF8749;
+        --text-primary: #ffffff;
+        --content-padding: 10% 0;
+    }
+    body{
+      font-size: 18px;
+      font-weight: 300px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  
+    .fa-brands{
+      color: var(--text-primary);
+      margin: 10px;
+    }
+    .intro__text,.intro-text{
+      font-size: 14px;
+    }
+    /* hero-section */
+    .hero__img{
+      padding-left: -0px;
+    }
+    .hero__header,.hero__text,.hero-text,.hero__btn{
+      text-align: center;
+    }
+    .hero__header,.mailing-header,.about__header,.course__header,.connect__h4,.assessment__header{
+      font-weight: 500;
+      font-family: 'Open Sans', sans-serif;
+      font-family: 'Playfair Display', serif;
+    }
+    .colored-section{
+      padding-right: 20px;
+      background-color: #006666;
+    }
+   .fa-copyright, .fa-images, .fa-desktop{
+    font-size: 40px;
+   }
+ 
+    .stages__three{
+      background-color: #669999;
+      color: var(--text-primary);
+    }
+
+    /* Button Animation */
+.btn-animate {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-animate:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.chat-button:hover {
+    animation: chat-pop 0.3s ease-in-out;
+}
+
+
+  
+</style>
+<body>
+
+    <div class="navigations">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark p-4">
+            <div class="container-fluid">
+              
+              <a href="index.html">
+                <img src="Logo.png" alt="" class="logo__text" width="150px">
+            </a>
+           
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+  <ul class="navbar-nav mx-auto text-center">
+    <li class="nav-item">
+      <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active text-white" href="#about">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active text-white" href="#carousel">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active text-white" href="#services">Services</a> 
+    </li>
+  </ul>
+</div>
+
+              </div>
+            </div>
+          </nav>
+    </div>
+  <!--  hero section -->
+  <section id="hero" class="colored-section mt-1">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="hero__img col-12 col-md-6 text-center">
+              <img src="hero_img.jpg" alt="hero__img" class="img-fluid mx-3 mt-2">
+            </div>
+            <div class=" hero__text col-12 col-md-6">
+              <div class="hero-text1 m-2">
+                <h1 class="hero__header text-white">Hi there! I'm Adriane Baysa.</h1>
+                <p class="hero-text text-white  ">I'm passionate about bringing creativity to every project. Whether it's designing logos, crafting unique character names, building user-friendly interfaces, or bringing drawings to life, I've got you covered. Take a peek at my work and let's create something amazing together!</p>
+               
+                <a class="btn btn-primary btn-lg btn-animate" href="#about" role="button">About Me</a>
+                <a class="btn btn-outline-light btn-lg btn-animate" href="#carousel" role="button">My Projects</a>
+             
+                
+              </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!--  about section -->
+    <section id="about" class="bg-dark mt-1">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center">
+                <div class="hero__text col-12 col-md-6">
+                    <div class="hero-text1 m-2">
+                        <h1 class="hero__header text-white">About Me</h1>
+                        <p class="hero-text text-white"> From winning Poster Making Contests to coaching juniors in digital art, I love bringing ideas to life. I've also built cool standalone systems and won a Moniker Naming Contest for my school, designing merch along the way. When I'm not crafting certificates, you'll find me behind the camera making films.</p>
+                        <a class="btn btn-primary btn-lg btn-animate" href="#services" role="button">Services</a>
+                        <a class="btn btn-outline-light btn-lg btn-animate" href="#contact" role="button">My Contact</a>
+                    </div>
+                </div>
+                <div class="hero__img col-12 col-md-6"><img src="about photo.jpg" alt="hero__img" class="img-fluid"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAROUSEL SECTION -->
+    <section id="carousel" class="colored-section p-4">
+      <h1 class="hero__header text-white p-4">Projects</h1>
+        <div id="testimonial-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center">
+                    <h2 class="text-white">SMU Blue Phoenix</h2>
+                    <p class="text-white">A moniker I designed for my school in college, SMU Blue Phoenix, is my biggest achievement by leaving a legacy to the school.</p>
+                    <img class="img-fluid" src="work-1.jpg" alt="First slide" style="max-width: 400px;">
+
+                </div>
+                <div class="carousel-item text-center">
+                    <h2 class="text-white">Magazine Layouts</h2>
+                    <p class="text-white">During my time at iPhiTech IT & Digital Solutions, I had the opportunity to create captivating magazine layouts. It was a chance to express my creativity and showcase my skills in graphic design.</p>
+                    <img class="img-fluid" src="work-2.png" alt="First slide" style="max-width: 300px;">
+                </div>
+
+                <div class="carousel-item text-center">
+                  <h2 class="text-white">Login UI</h2>
+                  <p class="text-white">The login design I made for our capstone project </p>
+                  <img class="img-fluid" src="work-3.jpg" alt="First slide" style="max-width: 700px;">
+              </div>
+
+              <div class="carousel-item text-center">
+                <h2 class="text-white">Mobile App UI</h2>
+                <p class="text-white">sample UI login design I made during my internship for the mobile app of The Asia CEO</p>
+                <img class="img-fluid" src="work-4.png" alt="First slide" style="max-width: 700px;">
+            </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+          
+        </div>
+    </section>
+    
+
+ <!-- services section -->
+ <section id="services" class="plain-section mt-4">
+  <h1 class="about__header text-center mb-3">Services</h1>
+<div class="container card-group text-center">
+  <div class="stages__three card m-3 p-3">
+    <i class="fa-solid fa-copyright" style="color: #004242;"></i>
+    <div class="card-body">
+        <h5 class=""><strong>Branding</strong></h5>
+      <p class="about-text">Crafting memorable brand identities that resonate with your audience is my specialty. Let's work together to create a unique brand image that sets you apart.</p>
+    </div>
+  </div>
+  <div class="stages__three card m-3 p-3">
+    <i class="fa-solid fa-desktop" style="color: #004242;"></i>
+    <div class="card-body">
+        <h5 class=""><strong>Website Design</strong></h5>
+      <p class="about-text">I specialize in designing visually stunning and user-friendly websites that drive results. Let's build an online presence that captivates your audience and enhances your brand.</p>
+    </div>
+  </div>
+  <div class="stages__three card m-3 p-3">
+    <i class="fa-regular fa-images" style="color: #004242;"></i>
+    <div class="card-body">
+        <h5 class=""><strong>Graphic Design</strong></h5>
+      <p class="about-text">From eye-catching posters to engaging social media graphics, I'll help you tell your story visually. Let's elevate your brand with polished design that leaves a lasting impression.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="about__btn text-center p-4">
+  <a class="btn btn-lg btn-primary btn-animate" href="mailto:drian.baysa@gmail.com" role="button">Let's Start a Project</a>
+</div>
+ 
+
+<!-- contact section -->
+<section id="contact" class="stages__three p-4 mb-4">
+  <div class="container text-center">
+    <h4 class="connect__h4">Get in Touch</h4>
+    <p class="connect__text">Have a project in mind or just want to say hello? I'd love to hear from you! Feel free to reach out using the contact form below or connect with me through email or social media. Let's collaborate and bring your ideas to life!</p>
+    <div class="about__btn text-center p-2">
+      <a class="btn btn-lg btn-outline-light btn-animate" href="mailto:drian.baysa@gmail.com" role="button">Say Hello</a>
+  </div>
+  
+  </div>
+</section>
+
+ <!-- FOOTER -->
+ <footer class="bg-dark p-4">
+  <div class="footer-bottom">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <p class="ftr-text mb-0 mt-3 text-white text-center">© Copyright 2024 drian.graphix |Adriane Baysa Web Designer</p>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  <button id="scrollBtn" onclick="topFunction()" title="Go to top" class="chat-button">
+    <i class="fa-solid fa-up-long"></i>
+</button>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    // scroll to top button
+            window.onscroll = function() {
+    scrollFunction();
+    };
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollBtn").style.display = "none";
+    }
+    }
+
+    function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+    </script>
+
+
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
